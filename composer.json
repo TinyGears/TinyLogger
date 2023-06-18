@@ -1,0 +1,15 @@
+{
+    "name": "bitlog/bitlog",
+    "description": "A simple implementation of PSR 3",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TinyGears\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "psr/log": "^3.0@dev"
+    }
+}
