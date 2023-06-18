@@ -16,7 +16,7 @@ use Psr\Log\{
  * @author Ryan Lima<contato@ryanlima.dev>
  */
 
-final class Logger implements LoggerInterface
+final class TinyLogger implements LoggerInterface
 {
     use LoggerTrait;
 

@@ -29,7 +29,7 @@ class FileStreamManager implements IStreamManager
         }
 
         $datetime = date('Y-m-d H:i:s.u');
-        $this->outputLogData .= '[' . $datetime . "]\t" . (!is_null($loggerName) ? $loggerName . '.' : '')  . strtoupper($level) . ":\t" . Logger::interpolate($message, $context) . PHP_EOL;
+        $this->outputLogData .= '[' . $datetime . "]\t" . (!is_null($loggerName) ? $loggerName . '.' : '')  . strtoupper($level) . ":\t" . TinyLogger::interpolate($message, $context) . PHP_EOL;
         if ($context <> []) {
             $this->outputLogData .= "\tContext: " . json_encode($context) . PHP_EOL;
         }
